@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>validation</title>
+	<script> 
+function GEEKFORGEEKS()                                    
+{ 
+    var name = document.forms["RegForm"]["Name"];               
+    var email = document.forms["RegForm"]["EMail"];    
+    var phone = document.forms["RegForm"]["Telephone"];  
+    var date =  document.forms["RegForm"]["Date Of Birth"];
+	
+      
+    
+   
+    if (name.value == "")                                  
+    { 
+        window.alert("Please enter your name."); 
+        name.focus(); 
+        return false; 
+    } 
+   
+    if (date.value == "")                               
+    { 
+        window.alert("Please enter your date of birth."); 
+        date.focus(); 
+        return false; 
+    } 
+       
+    if (email.value == "")                                   
+    { 
+        window.alert("Please enter a valid e-mail address."); 
+        email.focus(); 
+        return false; 
+    } 
+   
+    if (phone.value == "")                           
+    { 
+        window.alert("Please enter your telephone number."); 
+        phone.focus(); 
+        return false; 
+    } 
+   
+    if (password.value == "")                        
+    { 
+        window.alert("Please enter your password"); 
+        password.focus(); 
+        return false; 
+    } 
+   
+    if (percentage.value == "")                           
+    { 
+        window.alert("Please enter your percentage of marks."); 
+        percentage.focus(); 
+        return false; 
+    } 
+   
+    return true; 
+}</script> 
+	<style>
+
+ 
+ {
+ 	border: 20px solid red;
+ 	border-radius: 30px;
+	width: 100%;  
+	padding: 50px;  
+    
+  }
+  
+ 
+ 
+  </style>
+  </head>
+  <body align="center">
+  <body bgcolor= "#FFF5EE">
+  <div align="center">
+
+  
+    <h1 class="form-heading">REGISTRAION FORM</h1>
+    <form >
+  <table>
+		  <tr>
+			<td><label>First Name:</label></td>
+			<td><input type="text" required placeholder="Eg: XYZ " maxlength="20"></td>
+		  </tr>	
+          <tr>
+            <td><label >Last name:</label></td>
+            <td><input type="text" required placeholder="Eg: A " maxlength="20"></td>
+          </tr>
+
+          <tr>
+            <td><label>Date of birth</label></td>
+            <td><input type="date"   min="1900-01-01" max="2015-09-18" name="DOB" required></td>
+          </tr>
+
+          <tr>
+            <td><label>Mobile no:</label></td>
+				<td><input type="text" maxlength="10" required  placeholder="Eg: 8000000000"></td>
+          </tr>
+
+          <tr>
+            <td><label>Email:</label> </td>
+			<td><input type="email" required placeholder="Eg:xyz@gmail.com"></td>
+          </tr>
+          <tr>
+            	<td><label>Gender:</label></td>
+				<td><input type="radio" name="gen" required value="male"> Male &nbsp; 
+					<input type="radio" name="gen" required value="female">Female
+					<input type="radio" name="gen" required value="other">Other</td>
+
+          </tr>
+          <tr>
+              <td><label>Percentage of Mark</label></td>
+            <td><input type="number" name="Percentage" required placeholder="Eg: 98"></td>
+            </tr>
+            
+         
+          
+
+            <tr>
+            <td> </td>
+              <td><button class="form-button">Register</button></td>
+            </tr>
+
+  </table>
+    </form>
+
+  </body>
+</html>
